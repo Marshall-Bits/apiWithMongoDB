@@ -1,10 +1,10 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const User = require ('./user.model')
 
 mongoose.connect('mongodb+srv://marcel:12345@cluster0.vsfi8s4.mongodb.net/MyFirstDatabase')
     .then(() => console.log('mongoose connected'))
     .catch((err)=> console.log('Mongo DB is not working..', err))
-
 
 const app = express()
 
